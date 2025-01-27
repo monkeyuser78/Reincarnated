@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reincarnated Wiki</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="card">
+    <div class="loader">
+      <p>loading</p>
+      <div class="words">
+        <span class="word">enemies</span>
+        <span class="word">weapons</span>
+        <span class="word">cards</span>
+        <span class="word">buttons</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h1>Reincarnated Wiki</h1>
+    <nav>
+      <button class="tab-button active" data-tab="creatures">Creatures</button>
+      <button class="tab-button" data-tab="weapons">Weapons</button>
+      <button class="tab-button" data-tab="crafting">Crafting Recipes</button>
+    </nav>
+    <!-- Dark/Light Mode Toggle -->
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main>
+    <!-- Creatures Tab -->
+    <section id="creatures" class="tab-content active">
+      <h2>Creatures</h2>
+      <div class="creature-card">
+        <h3>Fire Drake</h3>
+        <p><strong>Affinity:</strong> Fire</p>
+        <p><strong>Abilities:</strong> Flame Breath, Heat Resistance</p>
+      </div>
+      <div class="creature-card">
+        <h3>Ice Serpent</h3>
+        <p><strong>Affinity:</strong> Ice</p>
+        <p><strong>Abilities:</strong> Freezing Bite, Ice Armor</p>
+      </div>
+    </section>
+
+    <!-- Weapons Tab -->
+    <section id="weapons" class="tab-content">
+      <h2>Weapons</h2>
+      <div class="weapon-card">
+        <h3>Flaming Sword</h3>
+        <p><strong>Damage:</strong> 50</p>
+        <p><strong>Effect:</strong> Burns enemies over time</p>
+      </div>
+      <div class="weapon-card">
+        <h3>Frost Bow</h3>
+        <p><strong>Damage:</strong> 40</p>
+        <p><strong>Effect:</strong> Slows enemies</p>
+      </div>
+    </section>
+
+    <!-- Crafting Recipes Tab -->
+    <section id="crafting" class="tab-content">
+      <h2>Crafting Recipes</h2>
+      <div class="recipe-card">
+        <h3>Flaming Sword</h3>
+        <p><strong>Materials:</strong> Iron Ingot x2, Fire Crystal x1</p>
+      </div>
+      <div class="recipe-card">
+        <h3>Healing Potion</h3>
+        <p><strong>Materials:</strong> Herbs x3, Water Flask x1</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reincarnated Wiki</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
